@@ -20,7 +20,7 @@ print(song_names)
 year = date.split("-")[0]
 scope="playlist-modify-private"
 
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="c930568605764ba4884d2b688147d819",client_secret="619c39530598459197fb64329dbcec35",redirect_uri="https://example.com",scope=scope,show_dialog=True,cache_path="token.txt"))
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="",client_secret="",redirect_uri="https://example.com",scope=scope,show_dialog=True,cache_path="token.txt"))
 user_id=sp.current_user()['id']
 song_uris = []
 for song in song_names:
